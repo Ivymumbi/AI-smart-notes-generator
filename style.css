@@ -73,3 +73,15 @@ footer {
   margin: 20px;
   text-align: center;
 }
+@keyframes blink-fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink-fade 1s infinite;
+}
