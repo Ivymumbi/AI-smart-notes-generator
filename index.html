@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmartNotes AI</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,7 +23,7 @@
         </textarea>
         <div>
           <button id="simplify-btn">Simplify</button>
-          <button id="bullet=btn">Bullet Points</button>
+          <button id="bullet-btn">Bullet Points</button>
         </div>
         <div class="output" id="output">AI response will appear here..</div>
       </section>
@@ -38,9 +40,7 @@
           <option value="procrastinating">I'm procrastinating</option>
         </select>
         <button id="motivation-btn">Generate Motivation</button>
-        <div class="motivation-output" id="motivation-output">
-          Motivation will appear here
-        </div>
+        <div class="motivation-output" id="motivation-output"></div>
       </section>
       <footer>
         This was created by
